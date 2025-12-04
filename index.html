@@ -35,6 +35,14 @@
   p.ex1{
   margin-left: 250px;
   }
+  pre {
+    text-align: justify;
+    text-justify: inter-word;
+    width: 90%;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+  }
   </style>
     
   <meta name="veiwport" content= "width=device-width, intiral-scale=1">
@@ -77,24 +85,27 @@
   <h3 id="Abstract">Abstract</h3>
   <p class="ex1">
   <pre id="Analysis_InText">
-    This article explores the mechanisms deployed in precision machines used to mitigate the effect that heat has on them to give them their ability to reliably hold drastically tighter tolerances than standard machine tools. The increasing demands of accuracy from these machines come from the evolving designs and scientific breakthroughs that require components produced to degree of accuracy that is hard to conceptualise.
+  This article explores the mechanisms deployed in precision machines used to mitigate the effect that heat has on them to give them their ability to reliably hold drastically tighter tolerances than standard machine tools. The increasing demands of accuracy from these machines come from the evolving designs and scientific breakthroughs that require components produced to degree of accuracy that is hard to conceptualise.
   </pre>
   </P>
 
   <h3 id="Introduction">Introduction</h3>
   <p class="ex1">
   <pre id="Introduction_InText">
-    Sub-micron accuracy is defined as a possible tolerance bellow 1 micrometre (µm) and is where precision machines are used to repeatably achieve these hard requirements needed for the component they manufacture to preform how they were intended to. Parts produced from these machines are critical to many industries including airspace, optics, semiconductors manufacturing and energy where the sub-micron tolerances are required to improve performance, reliability and ensure safety. (Hoffman and Zhang, 2018). It is thought that 70% of geometrical error in CNC (computer 
-    numerically controlled) machines is from thermal destruction on the machine. These thermal errors come from ambient temperature fluctuations and
-    heat generated from components from the machine which includes their motors, electronics and areas where friction occurs. Heat from these sources
-    causes thermal expansion within that machine causing dimensional drift Thermal expansion within a machine will change the tools position relative
-    to the workpiece. It is hard to predict how uneven temperature changes will change the shape as it can cause the machines not just to grow 
-    linearly but also distort. 
+  Sub-micron accuracy is defined as a possible tolerance bellow 1 micrometre (µm) and is where precision machines are used to repeatably achieve these 
+  hard requirements needed for the component they manufacture to preform how they were intended to. Parts produced from these machines are critical to
+  many industries including airspace, optics, semiconductors manufacturing and energy where the sub-micron tolerances are required to improve 
+  performance, reliability and ensure safety. (Hoffman and Zhang, 2018). It is thought that 70% of geometrical error in CNC (computer numerically 
+  controlled) machines is from thermal destruction on the machine. These thermal errors come from ambient temperature fluctuations and
+  heat generated from components from the machine which includes their motors, electronics and areas where friction occurs. Heat from these sources
+  causes thermal expansion within that machine causing dimensional drift Thermal expansion within a machine will change the tools position relative
+  to the workpiece. It is hard to predict how uneven temperature changes will change the shape as it can cause the machines not just to grow 
+  linearly but also distort. 
   </pre>
   </p>
 
   <h3 id="Material selection ">Material selection </h3>
-  <p>
+  <p class="ex1">
   <pre>
     Materials with a low thermal expansion are used to reduce the effect from temperature changes has on the machine from meat generated from the 
     machine but also the environment around it. (Mayr et al., 2012) A commonly used material for hight precision machines is granite not just because
@@ -173,6 +184,16 @@
   </pre>
   </P>
     
+  <h3 id="Conclusion">Conclusion </h3>
+  <p class="ex1">
+  <pre id="Conclusion _InText">
+    Thermal distortion is a massive hurdle for cnc machines achieving sub-micron accuracy. Each of the developments I have looked into all play a small 
+    but noticeable roll in reducing the error when implemented into the design of precision machines. As these technologies have been developed for high 
+    precision they get filtered down into making every day machines more accurate, this is particularly true for real time compensation as even simple 
+    models can improve accuracy quite significantly. 
+  </pre>
+  </P>
+
   <h3 id="References">References</h3>
   <p class="ex1">
   <pre>
@@ -182,7 +203,7 @@
     Mayr, J., Jedrzejewski, J., Uhlmann, E., M. Alkan Donmez, Knapp, W., Härtig, F., Wendt, K., Moriwaki, T., Shore, P., Schmitt, R., Brecher, C., T. Würz and Wegener, K. (2012). Thermal issues in machine tools. 61(2), pp.771–791.  doi:https://doi.org/10.1016/j.cirp.2012.05.008
     McKeown, P.A. and Morgan, G.H. (1979). Epoxy granite: a structural material for precision machines. Precision Engineering, 1(4), pp.227–229. doi:https://doi.org/10.1016/0141-6359(79)90104-1
     Li, Y., Yu, M., Bai, Y., Hou, Z. and Wu, W. (2021). A Review of Thermal Error Modeling Methods for Machine Tools. Applied Sciences, 11(11), pp.5216–5216. doi:https://doi.org/10.3390/app11115216
-    Naumann, C., Klimant, P., Lang, S., Mayr, J., Oborin, E., Einspieler, C., Bleicher, F. and Wegener, K. (2024). Hybrid thermal error compensation model using mixed targeted assembly error models Fraunhofer institute for machine tools and forming technology IWU Chemnitz ETH Zurich, Institute of machine tools and manufacturing IWF. [online] Available at: https://www.euspen.eu/knowledge-base/TI24109.pdf [Accessed 3 Dec. 2025].
+    Naumann, C., Klimant, P., Lang, S., Mayr, J., Oborin, E., Einspieler, C., Bleicher, F. and Wegener, K. (2024). Hybrid thermal error compensation model using mixed targeted assembly error models Fraunhofer institute for machine tools and forming technology IWU Chemnitz ETH Zurich, Institute of machine tools and manufacturing IWF. Available at: https://www.euspen.eu/knowledge-base/TI24109.pdf
 
     </pre>
   </p> 
@@ -279,5 +300,6 @@ window.onload = function(){
     
 </body>   
 </html>
+
 
 
