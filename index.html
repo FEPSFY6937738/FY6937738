@@ -71,35 +71,52 @@
   <h3 id="Abstract">Abstract</h3>
   <p class="ex1">
   <pre id="Analysis_InText">
-    This paper presents a novel adaptive learning strategy. The most accurate classification model from a heterogeneous 
-    classifier pool is selected at each learning epoch. Our goal is to achive greater incrementantal improvements in accuracy, compared 
-    to using a single type of classification model throught the proccess. The stratergy is evaluated on benchmark data sets.
-    We futher concider an application to texture classification problems in sonar mosaic imagery and compare it with non-adaptive
-    adaptive learning and traditional mechine learning approaches. Our results show that_We conclude that...
+    This article explores the mechanisms deployed in precision machines used to mitigate the effect that heat has on them to give them their ability 
+    to reliably hold drastically tighter tolerances than standard machine tools. The increasing demands of accuracy from these machines come from the 
+    evolving designs and scientific breakthroughs that require components produced to degree of accuracy that is hard to conceptualise.
   </pre>
   </P>
 
   <h3 id="Introduction">Introduction</h3>
   <p class="ex1">
     <pre id="Introduction_InText">
-      Active Learning (Angluin, 1988, Cohn et al., 1994) is a paradigm where a concept is learnt by an intelligent machine through the 
-      interaction of an oracle with the machine system, over a sequence of learning epochs. A distinctive component in an active system
-      is the querying strategy, used to sample candidate training instances from a pool and evaluate them for informativeness,
-      i.e., their potential to improve the classification model. Various strategies have been proposed including; Query by Committee (Seung et al., 1992),
-      Monte Carlo estimation (Roy and McCallum, 2001), uncertainty sampling (Lewis and Gale, 1994) and version space reduction 
-      (margin sampling) (Tong and Koller,2001). Irrespective of how the most informative pattern instances are chosen at each epoch they are presented for 
-      labeling, to a machine (database) or human oracle that has knowledge of the class labels. After adding the newly labeled instances to the current 
-      training set, a revised model is subsequently induced. A goal of this process is to achieve an efficient, incremental advancement of learning at 
-      each epoch. The process is continued until some stopping criterion has been met, such as reaching a stage where information from the selected 
-      instances is contrary to the model, causing the classifier confidence to drop, as in Vlachos (2008)
+      Sub-micron accuracy is defined as a possible tolerance bellow 1 micrometre (µm) and is where precision machines are used to repeatably achieve 
+      these hard requirements needed for the component they manufacture to preform how they were intended to. Parts produced from these machines are 
+      critical to many industries including airspace, optics, semiconductors manufacturing and energy where the sub-micron tolerances are required to 
+      improve performance, reliability and ensure safety. (Hoffman and Zhang, 2018). It is thought that 70% of geometrical error in CNC (computer numerically 
+      controlled) machines is from thermal destruction on the machine. These thermal errors come from ambient temperature fluctuations and heat generated 
+      from components from the machine which includes their motors, electronics and areas where friction occurs. Heat from these sources causes thermal 
+      expansion within that machine causing dimensional drift Thermal expansion within a machine will change the tools position relative to the workpiece. It
+      is hard to predict how uneven temperature changes will change the shape as it can cause the machines not just to grow linearly but also distort. 
     </pre>
   </p>
 
-  <h3 id="Analysis and discussion">Analysis and disscusion</h3>
+  <h3 id="Material selection ">Material selection </h3>
   <p>
     <pre>
-    Bridge deck repair durability is the subject of much recent of research such as in <a href="https://www.icevirtuallibrary.com/doi/full/10.1680/jbren.21.00034">Toshihiko et al(2023).</a>
-    Table 1: Data on cost and lifespan of bridge repairs
+      Materials with a low thermal expansion are used to reduce the effect from temperature changes has on the machine from meat generated from the machine 
+      but also the environment around it. (Mayr et al., 2012) A commonly used material for hight precision machines is granite not just because of it’s 
+      excellent thermal stability but has other desirable characteristics including stability, rigidity, wear resistance and an ability to absorb vibrations.
+      An alternative to granite are epoxy granite bases that matches many of the characteristics all whilst being significantly cheaper. Unlike granite that
+      requires to be machined from solid slabs into their desired form, epoxy granite is cast in moulds where wiring and coolant conduits are easily included. 
+      Surfaces can be ground, resulting in considerably cheaper bases without the lengthy lead times to get hard to find granite slabs. 
+      
+      However, castings mouldes need to be made so this only suits machines made in medium to large quantities and does not allow modifications to be easily made.
+      (McKeown and Morgan, 1979)
+      
+      There is problem with both granite and epoxy granite. The first is being that from their extremely slow thermal conductivity, heat travels slowly around the 
+      base causing hot spots near motors that then take a long time to disperse. The other concerns their heterogeneous makeup meaning their properties can vary 
+      drastically. This is not just between different bases but also within the same slab from the mixture of different minerals unevenly distributed. These can 
+      cause the machine to have uneven expansion within its self causing unwanted stresses. This makes the machine extremely difficult to predict how it will move 
+      when it experience different temperatures across the frame of the machine. 
+      
+      To combat this a new approach has been constructed that goes against systems with a slow response to temperature fluctuations in the surrounding areas from 
+      a low thermal conductivity. It uses materials like aluminium with high thermal conductivity and low thermal capacity meaning the system is able to respond 
+      quickly to thermal change. When the system is unevenly thermally loaded the system have a very homogenous temperature distribution. This means it acts in a
+      very predictable way so the model for temperature compensation is simple and more accurate. Also when coolant is pumped around the machine body it doesn’t 
+      create large temperature gradients across the system. The coolant removes any temperature from the system quickly because of its high specific heat capacity.
+      (Fritz and Janitza, 2013)
+
     </pre>
     <table>
       <tr>
@@ -129,19 +146,41 @@
     </table>
   </p>  
 
+  <h3 id="Design optimisation">Design optimisation</h3>
+  <p class="ex1">
+  <pre id="Design_optimisation_InText">
+    When designing a precision machine tool manufacturers first try use components that will produce as little thermal energy as possible where motors can’t be 
+    removed only made more efficient this is done by using components like hydrostatic ways and air bearings. These use pressurised air and oil to take the 
+    weight rather than any physical contact found in regular bearings, this significantly reduces the friction both helping with thermal stability and accuracy.
+    (Huang and Yang, 2022) The next thing designers try to do is to isolate any heat generating components from the base of the machine so the thermal energy 
+    isn’t being emitted into the base. This can be done with servo amplifiers, auxiliary pumps and chiller unites so any thermal energy isn’t put into the 
+    casting. This can be done with separate cabinets or by mounting these components on an isolated board away from the main body. The components that can’t be
+    isolated from the body of the machine like the spindle and motors need to be distributed around the machine so it is thermally symmetrical. This means 
+    thermal energy is distributed evenly across the machine so it grows evenly and more predictable minimising the possible temperature gradients.
+    (Li et al., 2021)
+  </pre>
+  </P>
+    
+  <h3 id="Real time compensation">Real time compensation</h3>
+  <p class="ex1">
+  <pre id="Real_time_compensation_InText">
+    This article explores the mechanisms deployed in precision machines used to mitigate the effect that heat has on them to give them their ability 
+    to reliably hold drastically tighter tolerances than standard machine tools. The increasing demands of accuracy from these machines come from the 
+    evolving designs and scientific breakthroughs that require components produced to degree of accuracy that is hard to conceptualise.
+  </pre>
+  </P>
+    
   <h3 id="References">References</h3>
   <p class="ex1">
     <pre>
-      Anguin, D (1988), Queries and concept learning. Machine learning 2, (4), 319-342.
+      Fritz, M. and Janitza, D. (2013). A New Approach on Reducing Thermal Impacts on High Precision Machine Tools. [online] Available at: https://www.euspen.eu/knowledge-base/ICE13344.pdf
+      Huang, H.-C. and Yang, W.-H. (2022). Thermal Characteristics of a Vertical Hydrostatic Guideway System for Precision Milling Machine Applications. Lubricants, [online] 10(10), p.247. doi:https://doi.org/10.3390/lubricants10100247
+      Hoffman, M. and Zhang, L. (2018). The Rising Importance of Precision Engineering. Engineering, 4(6), p.759. doi:https://doi.org/10.1016/j.eng.2018.11.007
+      Mayr, J., Jedrzejewski, J., Uhlmann, E., M. Alkan Donmez, Knapp, W., Härtig, F., Wendt, K., Moriwaki, T., Shore, P., Schmitt, R., Brecher, C., T. Würz and Wegener, K. (2012). Thermal issues in machine tools. 61(2), pp.771–791.  doi:https://doi.org/10.1016/j.cirp.2012.05.008
+      McKeown, P.A. and Morgan, G.H. (1979). Epoxy granite: a structural material for precision machines. Precision Engineering, 1(4), pp.227–229. doi:https://doi.org/10.1016/0141-6359(79)90104-1
+      Li, Y., Yu, M., Bai, Y., Hou, Z. and Wu, W. (2021). A Review of Thermal Error Modeling Methods for Machine Tools. Applied Sciences, 11(11), pp.5216–5216. doi:https://doi.org/10.3390/app11115216
+      Naumann, C., Klimant, P., Lang, S., Mayr, J., Oborin, E., Einspieler, C., Bleicher, F. and Wegener, K. (2024). Hybrid thermal error compensation model using mixed targeted assembly error models Fraunhofer institute for machine tools and forming technology IWU Chemnitz ETH Zurich, Institute of machine tools and manufacturing IWF. [online] Available at: https://www.euspen.eu/knowledge-base/TI24109.pdf [Accessed 3 Dec. 2025].
 
-      Brinker, K (2003), Incoperating Diversity in Active Learning with Support Vector Machines,
-      Proceedings of the Twentieth International Conference on Mechine Learning (ICML-2003).
-
-      Bruzzone, L Chi, M and Marconcii, M (2006), A novel transductive SVM for semisupervised classication of remote-sensing images,
-      IEEE Transactions on Geoscience and Remote Sencing, 44, (11), 3363.
-
-      Campbell, C, Cristiani, N and Smola, A (2000), Query learning with large margin classifiers.
-      In: Proc. 17th Internat. Conf.on Machine Learning. Morgan Kaufman, Stanford, CA,111-118.
     </pre>
   </p> 
     
