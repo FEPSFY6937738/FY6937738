@@ -266,7 +266,6 @@ Naumann, C., Klimant, P., Lang, S., Mayr, J., Oborin, E., Einspieler, C., Bleich
   // Function to calculate and display total word count from selected sections
   function displayTotalWordCount() {
     // Calculate word count for each section and accumulate the total
-    const AbstractCount = displayWordCount("Abstract_InText");
     const IntroductionCount = displayWordCount("Introduction_InText");
     const Material_selectionCount = displayWordCount("Material_selection_InText");
     const Design_optimisationCount = displayWordCount("Design_optimisation_InText");
@@ -274,7 +273,7 @@ Naumann, C., Klimant, P., Lang, S., Mayr, J., Oborin, E., Einspieler, C., Bleich
     const Conclusion_compensationCount = displayWordCount("Conclusion_InText");
 
     // Calculate the sum of all selected sections
-    const totalWordCount = AbstractCount + IntroductionCount + Material_selectionCount + Design_optimisationCount + Real_time_compensationCount + Conclusion_compensationCount ;
+    const totalWordCount = IntroductionCount + Material_selectionCount + Design_optimisationCount + Real_time_compensationCount + Conclusion_compensationCount ;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
