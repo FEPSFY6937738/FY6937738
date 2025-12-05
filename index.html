@@ -167,7 +167,7 @@ Another way precision machines are able extract more accuracy from themselves is
 
   <h3 id="Conclusion">Conclusion</h3>
   <p class="ex1">
-  <pre id="Conclusion _InText">
+  <pre id="Conclusion_InText">
 Thermal distortion is a massive hurdle for cnc machines achieving sub-micron accuracy. Each of the developments I have looked into all play a small but noticeable roll in reducing the error when implemented into the design of precision machines. As these technologies have been developed for high precision they get filtered down into making every day machines more accurate, this is particularly true for real time compensation as even simple models can improve accuracy quite significantly. 
   </pre>
   </P>
@@ -185,7 +185,6 @@ Huang, H.-C. and Yang, W.-H. (2022). Thermal Characteristics of a Vertical Hydro
 Hoffman, M. and Zhang, L. (2018). The Rising Importance of Precision Engineering. Engineering, 4(6), p.759. doi:<a href="https://doi.org/10.1016/j.eng.2018.11.007">https://doi.org/10.1016/j.eng.2018.11.007</a>
 
 Mayr, J., Jedrzejewski, J., Uhlmann, E., M. Alkan Donmez, Knapp, W., Härtig, F., Wendt, K., Moriwaki, T., Shore, P., Schmitt, R., Brecher, C., T. Würz and Wegener, K. (2012). Thermal issues in machine tools. 61(2), pp.771–791.  doi: <a href="https://doi.org/10.1016/j.cirp.2012.05.008">https://doi.org/10.1016/j.cirp.2012.05.008</a>
-
 
 McKeown, P.A. and Morgan, G.H. (1979). Epoxy granite: a structural material for precision machines. Precision Engineering, 1(4), pp.227–229. doi:<a href="https://doi.org/10.1016/0141-6359(79)90104-1">https://doi.org/10.1016/0141-6359(79)90104-1</a>
 
@@ -272,9 +271,10 @@ Naumann, C., Klimant, P., Lang, S., Mayr, J., Oborin, E., Einspieler, C., Bleich
     const Material_selectionCount = displayWordCount("Material_selection_InText");
     const Design_optimisationCount = displayWordCount("Design_optimisation_InText");
     const Real_time_compensationCount = displayWordCount("Real_time_compensation_InText");
+    const Conclusion_compensationCount = displayWordCount("Conclusion_InText");
 
     // Calculate the sum of all selected sections
-    const totalWordCount = AbstractCount + IntroductionCount + Material_selectionCount + Design_optimisationCount + Real_time_compensationCount;
+    const totalWordCount = AbstractCount + IntroductionCount + Material_selectionCount + Design_optimisationCount + Real_time_compensationCount + Conclusion_compensationCount ;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
